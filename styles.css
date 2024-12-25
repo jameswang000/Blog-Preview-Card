@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+a,
+a:active {
+  font-style: normal;
+  text-decoration: none;
+  color: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+:root {
+  --Yellow: hsl(47, 88%, 63%);
+  --White: hsl(0, 0%, 100%);
+  --Gray-500: hsl(0, 0%, 42%);
+  --Gray-950: hsl(0, 0%, 7%);
+  --Normal-Weight: 500;
+  --Bold-Weight: 800;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--Yellow);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Figtree", serif;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 17px;
+  width: min(365px, max(25%, 365px));
+  height: min(500px, max(60%, 500px));
+  padding: 20px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 20px;
+  box-shadow: 7px 7px 0px black;
+}
+
+.card-banner {
+  margin: 0px;
+  border-radius: 10px;
+}
+
+.topic-tag {
+  background-color: var(--Yellow);
+  font-size: 0.8rem;
+  font-weight: var(--Bold-Weight);
+  color: var(--Gray-950);
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.2rem;
+  margin-bottom: -5px;
+  margin-top: 5px;
+}
+
+.publish-date {
+  font-size: 0.8rem;
+  font-weight: var(--Normal-Weight);
+  color: var(--Gray-950);
+}
+
+.blog-title {
+  font-size: 1.5rem;
+  font-weight: var(--Bold-Weight);
+  color: var(--Gray-950);
+}
+
+.blog-title:focus,
+.blog-title:hover {
+  color: var(--Yellow);
+  cursor: pointer;
+}
+
+.blog-description {
+  font-size: 1rem;
+  font-weight: var(--Normal-Weight);
+  color: var(--Gray-500);
+}
+
+.author-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 5px;
+  align-items: center;
+}
+
+.author-container > img {
+  width: 1.5rem;
+}
+
+.author-container > cite {
+  font-size: 1rem;
+  font-weight: var(--Bold-Weight);
+  font-style: normal;
+}
